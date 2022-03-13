@@ -1,0 +1,9 @@
+version: '2'
+services:
+  frps:
+    # image: tqcq/frps
+    build: .
+    network_mode: host
+    container_name: frps
+    volumes:
+      - "./frp:/frp"
