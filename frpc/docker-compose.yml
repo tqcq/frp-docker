@@ -1,8 +1,9 @@
 version: '2'
 services:
   frpc:
-    # image: tqcq/frpc
-    build: .
+    image: tqcq/frpc
+    # build: .
+    restart: always
     network_mode: host
     container_name: frpc
     volumes:
